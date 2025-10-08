@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damas</title>
+  <link rel="stylesheet" href="TESTE.css">
+</head>
+<body>
+
+  <!-- Título do jogo -->
+  <div class="topo">Jogo de Damas</div>
+
+  <!-- MENU DE SELEÇÃO -->
+  <div id="menu">
+    <h2>Escolha o modo de jogo</h2>
+    <button id="btn1vs1">1 vs 1</button>
+    <button id="btnIA">Jogar contra IA</button>
+  </div>
+
+  <!-- PLACAR -->
+  <div class="placar" id="placar" style="display:none;">
+    Vermelho: <span id="pontosRed">0</span> | Preto: <span id="pontosBlack">0</span>
+  </div>
+
+  <!-- TURNO -->
+  <div id="turno" style="display:none;">Vez de: Vermelho</div>
+
+  <!-- TABULEIRO -->
+  <div class="board" id="board" style="display:none;"></div>
+
+  <!-- BOTÃO REINICIAR -->
+  <button id="btnReiniciar" style="display:none;">Reiniciar</button>
+
+  <footer>EPA 2025 - Desenvolvido por Edson Rodrigo, Felipe Gabriel e Gustavo Discher</footer>
+
+  <script src="TESTE.js"></script>
+</body>
+</html>

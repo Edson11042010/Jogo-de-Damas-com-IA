@@ -1,0 +1,99 @@
+/* ===== ESTILO GERAL ===== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-size: 20px;
+}
+
+/* ===== TOPO ===== */
+.topo {
+  background: #333;
+  color: white;
+  padding: 20px;
+  font-size: 2.2em;
+}
+
+/* ===== BOTÕES ===== */
+button {
+  margin: 15px;
+  padding: 15px 30px;
+  font-size: 1.3em;
+  border: none;
+  border-radius: 10px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+button:hover { background: #666; }
+
+/* ===== PLACAR ===== */
+.placar {
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+/* ===== TABULEIRO ===== */
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 90vw;
+  max-height: 90vw;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  border: 4px solid #333;
+  border-radius: 8px;
+}
+
+/* ===== CASAS ===== */
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light { background: #eee; }
+.dark  { background: #444; }
+
+/* ===== PEÇAS ===== */
+.piece {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+.red   { background: red; }
+.black { background: black; }
+
+/* ===== DAMA ===== */
+.king { border: 4px solid yellow; }
+.red.king { border-bottom: 4px solid red; }
+.black.king { border-bottom: 4px solid black; }
+
+/* ===== SELEÇÃO ===== */
+.selected { outline: 3px solid yellow; }
+
+/* ===== TURNO ===== */
+#turno {
+  margin: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.turno-red { color: red; }
+.turno-black { color: black; }
+
+/* ===== RODAPÉ ===== */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px){
+  body { font-size: 16px; }
+  .topo { font-size: 1.6em; padding: 10px; }
+  button { font-size: 1em; padding: 10px 20px; }
+  .placar { font-size: 1.2em; }
+  .piece { width: 80%; height: 80%; }
+}
